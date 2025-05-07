@@ -1,45 +1,55 @@
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-header{
+
+header {
     display: flex;
     justify-content: center;
     height: 120px;
 }
-.containe{
+
+.containe {
     justify-content: space-between;
     display: flex;
-    width: 990px;    
+    width: 990px;
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
 }
-.menu{
+
+.menu {
     display: flex;
     align-items: center;
 }
-nav ul, nav li{
+
+nav ul, nav li {
     list-style: none;
     margin: 0px;
     padding: 0px;
 }
-nav ul{
-    display:flex;
-} 
-nav a{
+
+nav ul {
+    display: flex;
+}
+
+nav a {
     text-decoration: none;
     padding: 15px;
     color: rgb(0, 0, 0);
 }
-nav .active a, nav a:hover{
+
+nav .active a,
+nav a:hover {
     background-color: blue;
     color: rgb(245, 245, 245);
     transition-duration: 0.8s;
 }
-#banner{
+
+#banner {
     background-image: url('../images/img1.jpeg');
     background-position: center;
     background-size: cover;
@@ -47,22 +57,25 @@ nav .active a, nav a:hover{
     display: flex;
     justify-content: center;
 }
-.column{
+
+.column {
     flex-direction: column;
 }
-.banner_headline{
-    flex:1;
+
+.banner_headline {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.banner_options{
+
+.banner_options {
     height: 220px;
     display: flex;
-    
+
 }
 
-.banner_headline h1{
+.banner_headline h1 {
     color: rgb(255, 255, 255);
     font-size: 37px;
     text-shadow: 0px 1px 0px #e9e2e2;
@@ -70,7 +83,8 @@ nav .active a, nav a:hover{
     padding: 0px;
     max-width: 350px;
 }
-.banner_headline h2{
+
+.banner_headline h2 {
     color: aliceblue;
     font-size: 39px;
     text-shadow: 0px 1px 0px #555;
@@ -78,29 +92,38 @@ nav .active a, nav a:hover{
     padding: 0px;
     max-width: 350px;
 }
-.banner1, .banner2, .banner3{
+
+.banner1,
+.banner2,
+.banner3 {
     flex: 1;
     color: aliceblue;
     padding: 20px;
 }
-.banner1{
-    background-color:  blue;
+
+.banner1 {
+    background-color: blue;
 
 }
-.banner2{
-    background-color:  blue;
-}
-.banner3{
+
+.banner2 {
     background-color: blue;
 }
-.banner_title{
+
+.banner3 {
+    background-color: blue;
+}
+
+.banner_title {
     font-size: 21px;
 }
-.banner_desc{
+
+.banner_desc {
     font-size: 12px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 .banner_options a {
     border: 1px solid #e9e2e2;
     padding: 4px;
@@ -109,26 +132,30 @@ nav .active a, nav a:hover{
     text-decoration: none;
 }
 
-#geral{
+#geral {
     display: flex;
     justify-content: center;
 }
-.widget_title{
+
+.widget_title {
     margin-top: 30px;
     margin-bottom: 20px;
 }
-.widget_title_text{
+
+.widget_title_text {
     color: #000;
     font-size: 21px;
     font-weight: bold;
 }
-.widget_title_bar{
+
+.widget_title_bar {
     width: 50px;
     height: 5px;
     background-color: aqua;
     margin-top: 10px;
 }
-#rodaope{
+
+#rodaope {
     background-color: black;
     display: flex;
     justify-content: center;
@@ -137,4 +164,49 @@ nav .active a, nav a:hover{
     color: #000;
     font-size: 12px;
     margin-top: 30px;
+}
+
+@media (max-width: 800px) {
+    header {
+        height: 70px;
+    }
+
+    .logo {
+        margin-bottom: 5px;
+    }
+
+    nav ul,
+    nav li {
+        font-size: 0.9em;
+        margin-bottom: 2px;
+    }
+
+    nav a {
+        padding: 5px;
+    }
+
+    .banner_headline h1 {
+        font-size: 55px;
+        padding: 20px;
+    }
+
+    .banner_headline h2 {
+        font-size: 17px;
+    }
+
+    .banner_options {
+        height: auto;
+        flex-direction: column;
+    }
+    .containe {
+        flex-direction: column;
+    }
+    #geral {
+        flex-direction: column;
+        padding: 20px;
+    }
+    #rodape{
+        flex-direction: column;
+        padding: 20px;
+    }
 }
